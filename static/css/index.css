@@ -1,0 +1,138 @@
+:root {
+  --tileColor: #96c496;
+  --secColor: #638f63;
+}
+
+body,
+html {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  /* font-family: "Roboto", sans-serif; */
+  font-family: cursive;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+}
+
+.board {
+  margin: auto;
+  /* width: 30rem; */
+  /* height: 30rem; */
+  background-color: var(--secColor);
+  display: grid;
+  grid-gap: 0.5rem;
+  width: fit-content;
+  padding: 0.5rem;
+}
+
+.board > .square {
+  width: 7rem;
+  height: 7rem;
+  background-color: var(--tileColor);
+  margin: auto;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 4rem;
+  color: white;
+}
+
+.square * {
+  /* margin: 8px 0; */
+  font-size: 2rem;
+}
+
+#a0 {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+#a1 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+#a2 {
+  grid-row: 1;
+  grid-column: 3;
+}
+
+.ref {
+  width: 100%;
+  height: 3rem;
+  margin: 0.8rem;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.ref p {
+  font-size: 1.5rem;
+}
+
+.scoreboard {
+  margin-bottom: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around !important;
+}
+
+#btn {
+  border: none;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background-color: var(--secColor);
+  font-size: 2rem;
+  font-weight: 700;
+  color: white;
+  transition: 0.2s ease;
+}
+
+#btn:hover {
+  background-color: var(--tileColor);
+}
+
+#btn:focus {
+  outline: none;
+}
+
+#btn:active {
+  background-color: #4c6d4c;
+}
+
+#p1s,
+#p2s {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#p1s,
+#btn,
+#p2s {
+  margin: auto;
+  padding-inline: 2rem;
+}
+
+@media (max-width: 400px) {
+  html {
+    font-family: 0.8rem;
+  }
+  .board {
+    height: auto;
+    width: 100%;
+    margin: auto;
+  }
+  .board > .square {
+    /* height: auto; */
+    width: vw/ 3;
+  }
+
+  #btn {
+    font-size: small;
+    padding: 0.5rem;
+  }
+}

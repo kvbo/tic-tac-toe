@@ -1,0 +1,43 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>tic tac toe</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./static/css/index.css">
+    </head>
+    <body>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+            </style>
+        <div class="ref">
+            <p id="text"></p>
+        </div>
+
+        <div class="board" id="board">
+            <div class="square" id="a0" onclick="clicked(this)"></div>
+            <div class="square" id="a1" onclick="clicked(this)"></div>
+            <div class="square" id="a2" onclick="clicked(this)"></div>
+            <div class="square" id="b0" onclick="clicked(this)"></div>
+            <div class="square" id="b1" onclick="clicked(this)"></div>
+            <div class="square" id="b2" onclick="clicked(this)"></div>
+            <div class="square" id="c0" onclick="clicked(this)"></div>
+            <div class="square" id="c1" onclick="clicked(this)"></div>
+            <div class="square" id="c2" onclick="clicked(this)"></div>
+        </div>
+        <div class="scoreboard">
+            <div id="p1s">
+                <h5>player one</h5>
+                <h1 id="score_p1">0</h1>
+            </div>
+            <button id="btn" onclick="reset()">New game</button>
+            <div id="p2s">
+                <h5>player two</h5>
+                <h1 id="score_p2">0</h1>
+            </div>
+        </div>
+        <script src="./static/js/index.js" async defer></script>
+    </body>
+</html>
